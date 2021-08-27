@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== Estilo ===============-->
+        <link rel="stylesheet" href="/estilos.css">
+           <!-- script -->
+           <script src="/metodo.js"></script>
+        <title>Prueba de Aplicacionnes Informaticsa</title>
+    </head>
+    <body>
+        <!--=============== Encabezado ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a style="text-decoration: none; color: white;" href="#" class="nav__logo">
+                  ESPOCH
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#ejercicioResolucion" class="nav__link">Ejercicios</a>
+                        </li>
+                      
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== INICIO ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                 
+                    
+                    <div class="home__data">
+                        <div class="home__header">
+                            <h1 class="home__title">Resolucion</h1>
+                            <h2 class="home__subtitle">Prueba Parcial</h2>
+                        </div>
+
+                        <div class="home__footer">
+                            <h3 class="home__title-description">Contenido</h3>
+                         
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           <!--=============== CONTENIDO ===============-->
+           <section class="discount section" id="ejercicioResolucion">
+            <div class="discount__container container grid" >
+                <div style="margin-left: 20px; margin-right: 40px;" class="discount__animate">
+                    <h2 style="text-align: center;" class="discount__title">Calculadora
+                    
+                    <br>
+                    <label for="" style="margin-left: 5px; margin-right: 5px;">DATO 1</label>
+                    <Input style="padding: 1rem; border-radius: 25px;" id="dato1op" ></Input>
+                    <br>
+                    <br>
+                    <label for="" style="margin-left: 5px; margin-right: 5px;">DATO 2</label>
+                    <Input style="padding: 1rem; border-radius: 25px;" id="dato2op" ></Input>
+                    <br>
+                    <br>
+                   <button style="color: white; background-color: rgb(46, 44, 44); padding: 1rem; border-radius: 10px; font-size: 20px;" onclick=" sumarespes()" > SUMA</button>
+                   <button style="color: white; background-color: rgb(46, 44, 44); padding: 1rem; border-radius: 10px; font-size: 20px;" onclick=" restaRes()" > Resta</button>
+                   <button style="color: white; background-color: rgb(46, 44, 44); padding: 1rem; border-radius: 10px; font-size: 20px;" onclick=" multiplicacionres()" > Multiplicacion</button>
+                   <button style="color: white; background-color: rgb(46, 44, 44); padding: 1rem; border-radius: 10px; font-size: 20px;" onclick=" divisionres()" > Division</button>
+                    <br>
+                    <select  style=" margin-top: 20px; color: white; background-color: rgb(46, 44, 44); padding: 1rem; border-radius: 10px; font-size: 20px;" id="op">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <button style="color: white; background-color: rgb(46, 44, 44); padding: 1rem; border-radius: 10px; font-size: 20px;" id="botoncalculo" onclick="porselector()"> Calcular</button>
+                    <br>
+                    <br>
+                    <label for="" id="respuest1">-------------</label>
+                    
+                </div>
+
+               
+            </div>
+        </section>
+<!-- Fin contenido -->
+
+        <!--=============== FIN DE PAGINA ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Maria Jose Tapia</h3>            
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title" style="margin-right: 5px;">maria.tapia@espoch,edu.ec</h3>   
+                </div>
+                <div class="footer__content">
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="github.com" target="_blank" class="footer__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copy">
+                <a href="https://www.youtube.com/c/Bedimcode/" target="_blank" class="footer__copy-link">ESPOCH-2021</a>
+            </p>
+        </footer>    
+        <!-- script -->
+        <script src="/metodo.js"></script>
+    </body>
+</html>
